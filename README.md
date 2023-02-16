@@ -36,7 +36,7 @@
  * After generating C source code based project, you should replace certain files in order to enable evaluation. You could directly copy and paste the files to the generated project in Keil.(four file - usart.c, app_x-cube-ai.c, app_x-cube-ai.h, main.c)
  * When build the project, make sure that you check Use MicroLIB in Setting <img src="img/Option_icon.png"> ->Target->Code Generation.
  <img src="img/option_target.png">
- * Click Build<img src="img/build_icon.png">
+ * Click Build <img src="img/build_icon.png">
  * **If an error like <L6050U: The code size of this image exceeds the maximum allowed for this version...> occur, your model size should be reduced. The Lite version can only be compiled up to 32 Kb.**
  <img src="img/build_error.png">
  * **One way is to reduce the size by changing Optimization from C/C++ (Tap) to -Oz image size or -Os balanced in the Option. (But it's not going to be much.)**
@@ -48,6 +48,7 @@
  * First, go to Device Manager in Windows.
  * On the Ports tab, check the number of COM ports the device is connected (e.g. (STMicroelectronics STLINK Virtual COM Port(COM4))).
  * And click STMicroelectronics STLINK Virtual COM Port to go to the Port Settings tab and change Bit/S(B) to 115200.
+ <img src="img/Device_manager.png">
  * Then, you go down to the bottom of the validation.py file, you will see argparser codes like above. Here, '--com', '--path_data' must be modified.
  * com is the name of the port to which the board is connected, and path_data is the location of the data set that was used when learning.
  * **(The verification is conducted in the Windows environment, so you must download dataset to Windows and enter the location in default='path' path.)**
