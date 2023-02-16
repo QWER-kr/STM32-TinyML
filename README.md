@@ -38,7 +38,7 @@
  * <img src="img/option_target.png">
  * Click Build <img src="img/build_icon.png">
  * **If an error like <L6050U: The code size of this image exceeds the maximum allowed for this version...> occur, your model size should be reduced. The Lite version can only be compiled up to 32 Kb.**
- * <img src="img/build_icon.png">
+ * <img src="img/build_error.png">
  * **One way is to reduce the size by changing Optimization from C/C++ (Tap) to -Oz image size or -Os balanced in the Option. (But it's not going to be much.)**
  * Build is complete, you can now upload the model on the your board. 
  * Click Download button or F8
