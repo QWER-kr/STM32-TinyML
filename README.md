@@ -163,3 +163,5 @@
   
   5. Finally, press the Reset button located at the top of the board to start verification.
      * <img src="img/validation.png">
+     
+     * <img src="img/validation_result.png">
