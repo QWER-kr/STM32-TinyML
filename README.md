@@ -68,16 +68,27 @@
      <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220915093242012.png" alt="image-20220915093242012" style="zoom:67%;" />
 
   ## Load Program to Board
+  
+  1. After generating C source code based project, you should replace certain files in order to enable evaluation. All four files that should be replaced are provided. You could directly copy and paste the files from the folder `framework_x-cube-ai` to the generated project in Keil:
 
-  1. Connet the boadr to computer.
+     1. **usart.c**
+     2. **app_x-cube-ai.c**
+     3. **app_x-cube-ai.h**
+     4. **main.c**
+
+  2. When build the project, make sure that you check `Use MicroLIB` in `Setting-Target-Code Generation`. 
+
+     <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220916085712870.png" alt="image-20220915093242012" style="zoom:67%;" />
+
+  3. Connet the boadr to computer.
 
      <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627203515997.png" alt="image-20220627203515997" style="zoom: 25%;" />
 
-  2. Open project in MDK5 and build.
+  4. Open project in MDK5 and build.
 
      ![build](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/build.png)
 
-  3. Check if the debugger is connected.
+  5. Check if the debugger is connected.
 
      First, click ***Options for Target***.
 
@@ -95,7 +106,7 @@
 
      ![full chip](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/full%20chip.png)
 
-  4. Now you can load program to the board.
+  6. Now you can load program to the board.
 
      ![load](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/load.png)
 
