@@ -24,13 +24,11 @@
 
      ![install](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/install.png)
 
-  3. When selecting X-Cube-AI package, you should choose `Application Temp`.
+  3. Click ***Software Packs --- Select Components*** and set option as follow.
 
-     <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220826184229102.png" alt="image-20220826184229102" style="zoom:50%;" />
+     ![components](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/components.png)
 
-     Under these mode, you don't need to specify the communication serial port, just select the model.
-
-     <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220826184853048.png" alt="image-20220826184853048" style="zoom:50%;" />
+     ![Snipaste_2022-07-09_16-19-42](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/Snipaste_2022-07-09_16-19-42.png)
 
   4. Set PA2 as VCP_TX, and set PA15 as VCP_RX.
 
