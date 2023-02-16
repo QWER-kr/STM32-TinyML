@@ -160,11 +160,11 @@
      * **If an error such as "ERROR: Error [WinError 225]" occurred during installation, shut down the Windows Defender and all vaccines.**
      
   4. When you finish installing the library, you can run it through "python validation.py" 
+     * <img src="img/validation.png">
   
   5. Finally, Click the reset button on the bottom of the board and start validation process.
      ![image-20220627203955477](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627203955477.png)
     
-     * <img src="img/validation.png">
 
   6. After verification, you can check the results.
      
