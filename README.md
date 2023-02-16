@@ -6,6 +6,7 @@
  * ST-Link Driver(https://www.st.com/content/my_st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.license=1656325086116.product=STSW-LINK009.version=2.0.2.html)
  * STM32 Board (e.g. NUCLEO-L432KC)
  * Containing the structure and parameters of the learning model .onnx file (if trained by Pytorch)
+ * Download 'validation.py', 'framework_x-cube-ai folder' and then prepare a 'dataset' for verification in one folder.
 
 ## How to deploy training model?
  * **STM32CubeMX**  
