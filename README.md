@@ -135,8 +135,9 @@
     
   3. Click open file Tap next to Device memory Tap
     
-  4. If you have successfully completed the Build process, the .hex file will exist in the ST\"Project Name"\MDK-ARM\"Project Name"\ directory.
+  4. If you have successfully completed the Build process, the .hex file will exist in the ***ST\"Project Name"\MDK-ARM\"Project Name"\ directory***.
     <img src="img/hex_selec.png">
+    * **My project name is Test.**
     
   5. Press the Connect button on the right and then the Download button.
     <img src="img/co_do.png">
