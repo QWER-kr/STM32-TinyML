@@ -30,15 +30,11 @@
 
      <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220826184229102.png" alt="image-20220826184229102" style="zoom:50%;" />
 
-  4. Set PA2 as VCP_TX, and set PA15 as VCP_RX.
-
-     ![pins](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/pins.png)
-
-  5. Set Connectivity.
+  4. Set Connectivity.
 
      ![connectivity](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/connectivity.png)
 
-  6. Set AI network
+  5. Set AI network
 
      First, set the communication options as follow
 
@@ -52,11 +48,11 @@
 
      ![image-20220627202020441](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627202020441.png)
 
-  7. Set Clock
+  6. Set Clock
 
      ![clock](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/clock.png)
 
-  8. Finish settings and click ***GENERATE CODE***
+  7. Finish settings and click ***GENERATE CODE***
 
      ![project manager](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/project%20manager.png)
 
