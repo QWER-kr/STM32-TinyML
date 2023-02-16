@@ -70,6 +70,10 @@
   8. Finish settings and click ***GENERATE CODE***
 
      ![project manager](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/project%20manager.png)
+     
+     * ****
+     * **The stack and heap sizes of the original Keil project were set as just 0x800 (2,048 bytes each), which caused unknown bugging behaviours in running.**
+     * **After setting stack and heap sizes as 0x3000 and 0x5000, our code was safely run.**  
 
   ## Load Program to Board
   
