@@ -20,7 +20,7 @@
 
      ![manage software packs](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/manage%20software%20packs.png)
 
-     Click the check box of <u>Artifacial Intelligence( v7.1.0 )</u> under **X.CUBE.AI** and click ***Install Now.***
+     Click the check box of <u>Artifacial Intelligence( v7.1.0 or Upper version )</u> under **X.CUBE.AI** and click ***Install Now.***
 
      ![install](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/install.png)
 
