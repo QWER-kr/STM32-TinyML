@@ -102,7 +102,7 @@
 
      <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/swdio.png" alt="swdio"  />
 
-     Finally, switch to <u>Flash Download</u> and check <u>Reset and Run</u>
+     Finally, switch to <u>Flash Download</u> and check <u>Reset and Run</u>(option)
 
      ![full chip](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/full%20chip.png)
 
