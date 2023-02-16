@@ -30,9 +30,12 @@
 
      <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220826184229102.png" alt="image-20220826184229102" style="zoom:50%;" />
 
-  4. Set Connectivity.
+  4. The `TIM` must be enabled to perform accurate inference latency measurement: 
+     ![image-20220917144705663](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220917144705663.png)
 
-     ![connectivity](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/connectivity.png)
+     Make sure the Parameter Settings are modified as the figure shown below:
+
+     ![image-20220917144834834](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220917144834834.png)
 
   5. Set AI network
 
