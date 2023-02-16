@@ -115,17 +115,21 @@
 
  ## Validation in python
   1. First, go to Device Manager in Windows.
-     * On the Ports tab, check the number of COM ports the device is connected (e.g. (STMicroelectronics STLINK Virtual COM Port(COM4))).
-     * And click STMicroelectronics STLINK Virtual COM Port to go to the Port Settings tab and change Bit/S(B) to 115200.
+     * On the Ports tab, check the number of COM ports the device is connected.
+     * And go to the Port Settings tab and change Bit/S(B) to 115200.
      <img src="img/Device_manager.png">
- * Then, you go down to the bottom of the validation.py file, you will see argparser codes like above. Here, '--com', '--path_data' must be modified.
- * com is the name of the port to which the board is connected, and path_data is the location of the data set that was used when learning.
- * <img src="img/argparser.png">
- * **(The verification is conducted in the Windows environment, so you must download dataset to Windows and enter the location in default='path' path.)**
- * Finally, you must install the required Python library before running.(serial, numpy, scikit-learn, tqdm, pyserial)
- * "pip install serial numpy scikit-learn tqdm pyserial"
- * <img src="img/pip_install.png">
- * **If an error such as "ERROR: Error [WinError 225]" occurred during installation, shut down the Windows Defender and all vaccines.**
- * When you finish installing the library, you can run it through "python validation.py" 
- * Finally, press the Reset button located at the top of the board to start verification.
- * <img src="img/validation.png">
+     
+  2. Then, you go down to the bottom of the validation.py file, you will see argparser codes like above. Here, '--com', '--path_data' must be modified.
+     * com is the name of the port to which the board is connected, and path_data is the location of the data set that was used when learning.
+     <img src="img/argparser.png">
+     * **(The verification is conducted in the Windows environment, so you must download dataset to Windows and enter the location in default='path' path.)**
+     
+  3. You must install the required Python library before running.(serial, numpy, scikit-learn, tqdm, pyserial)
+     * "pip install serial numpy scikit-learn tqdm pyserial"
+     * <img src="img/pip_install.png">
+     * **If an error such as "ERROR: Error [WinError 225]" occurred during installation, shut down the Windows Defender and all vaccines.**
+     
+  4. When you finish installing the library, you can run it through "python validation.py" 
+  
+  5. Finally, press the Reset button located at the top of the board to start verification.
+     * <img src="img/validation.png">
