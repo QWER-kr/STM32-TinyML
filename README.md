@@ -117,9 +117,10 @@
  
  ## Deploy though STM32CubeProgrammer
   1. Install STM32CubeProgrammer (https://www.st.com/en/development-tools/stm32cubeprog.html)
-    <img src="img/stm32prog.png">
     
-    * **If you do not see the STM32CubeProgrammer icon after the installation is complete, try installing a different version.**
+    <img src="img/stm32prog.png">
+     
+   * **If you do not see the STM32CubeProgrammer icon after the installation is complete, try installing a different version.**
     
   2. When the installation is complete, please run STM32CubeProgrammer.
     <img src="img/prog_window.png">
