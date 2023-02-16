@@ -112,6 +112,28 @@
   6. Now you can load program to the board.
 
      ![load](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/load.png)
+     
+     * **If you press the Debug tap, Build button and Keil Tool is forced to exit, proceed to the next step.**
+ 
+ ## Deploy though STM32CubeProgrammer
+  1. Install STM32CubeProgrammer (https://www.st.com/en/development-tools/stm32cubeprog.html)
+    <img src="img/stm32prog">
+    * **If you do not see the STM32CubeProgrammer icon after the installation is complete, try installing a different version.**
+    <img src="img/prog_version">
+    
+  2. When the installation is complete, please run STM32CubeProgrammer.
+    <img src="img/prog_window">
+    
+  3. Click open file Tap next to Device memory Tap
+    
+  4. If you have successfully completed the Build process, the .hex file will exist in the ST\"Project Name"\MDK-ARM\"Project Name"\ directory.
+    <img src="img/hex_selec">
+    
+  5. Press the Connect button on the right and then the Download button.
+    <img src="img/co_do">
+    
+  6. This process allows you to deploy models on the board without the Keil Tool.
+    
 
  ## Validation in python
   1. First, go to Device Manager in Windows.
