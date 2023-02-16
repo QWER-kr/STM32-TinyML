@@ -117,20 +117,20 @@
  
  ## Deploy though STM32CubeProgrammer
   1. Install STM32CubeProgrammer (https://www.st.com/en/development-tools/stm32cubeprog.html)
-    <img src="img/stm32prog">
+    <img src="img/stm32prog.png">
     * **If you do not see the STM32CubeProgrammer icon after the installation is complete, try installing a different version.**
-    <img src="img/prog_version">
+    <img src="img/prog_version.png">
     
   2. When the installation is complete, please run STM32CubeProgrammer.
-    <img src="img/prog_window">
+    <img src="img/prog_window.png">
     
   3. Click open file Tap next to Device memory Tap
     
   4. If you have successfully completed the Build process, the .hex file will exist in the ST\"Project Name"\MDK-ARM\"Project Name"\ directory.
-    <img src="img/hex_selec">
+    <img src="img/hex_selec.png">
     
   5. Press the Connect button on the right and then the Download button.
-    <img src="img/co_do">
+    <img src="img/co_do.png">
     
   6. This process allows you to deploy models on the board without the Keil Tool.
     
