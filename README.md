@@ -28,7 +28,7 @@
 
      ![components](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/components.png)
 
-     ![Snipaste_2022-07-09_16-19-42](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/Snipaste_2022-07-09_16-19-42.png)
+     <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220826184229102.png" alt="image-20220826184229102" style="zoom:50%;" />
 
   4. Set PA2 as VCP_TX, and set PA15 as VCP_RX.
 
