@@ -113,7 +113,7 @@
 
      ![load](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/load.png)
 
- * **Validation in python**
+ ## Validation in python
  * You need to set up before running on Python.
  * First, go to Device Manager in Windows.
  * On the Ports tab, check the number of COM ports the device is connected (e.g. (STMicroelectronics STLINK Virtual COM Port(COM4))).
