@@ -161,7 +161,11 @@
      
   4. When you finish installing the library, you can run it through "python validation.py" 
   
-  5. Finally, press the Reset button located at the top of the board to start verification.
+  5. Finally, Click the reset button on the bottom of the board and start validation process.
+     ![image-20220627203955477](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627203955477.png)
+    
      * <img src="img/validation.png">
+
+  6. After verification, you can check the results.
      
      * <img src="img/validation_result.png">
