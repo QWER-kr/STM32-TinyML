@@ -28,17 +28,17 @@
  * Go to Project Manager, Change Application - Basic and write Project Name\
  * Choose Toolchain / IDE - MDK-ARM
  * **The stack and heap sizes of the original Keil project were set as just 0x800 (2,048 bytes each), which caused unknown bugging behaviours in running.**
-  * **After setting stack and heap sizes as 0x3000 and 0x5000, our code was safely run.**  
+ * **After setting stack and heap sizes as 0x3000 and 0x5000, our code was safely run.**  
  * In order to operate the header file later, don't forget to check option Generate peripheral initialization as a pair of '.c/.h' files per peripheral in the Code Generator when generating code in Project Manager-Code Generator.
  * TIM in LL library should be selected in Project Manager-Advance Settings.
 
  * **MDK-ARM (Keil)**
  * After generating C source code based project, you should replace certain files in order to enable evaluation. You could directly copy and paste the files to the generated project in Keil.(four file - usart.c, app_x-cube-ai.c, app_x-cube-ai.h, main.c)
  * When build the project, make sure that you check Use MicroLIB in Setting <img src="img/Option_icon.png"> ->Target->Code Generation.
- <img src="img/option_target.png">
+ * <img src="img/option_target.png">
  * Click Build <img src="img/build_icon.png">
  * **If an error like <L6050U: The code size of this image exceeds the maximum allowed for this version...> occur, your model size should be reduced. The Lite version can only be compiled up to 32 Kb.**
- <img src="img/build_error.png">
+ * <img src="img/build_error.png">
  * **One way is to reduce the size by changing Optimization from C/C++ (Tap) to -Oz image size or -Os balanced in the Option. (But it's not going to be much.)**
  * Build is complete, you can now upload the model on the your board. 
  * Click Download button or F8
@@ -48,14 +48,14 @@
  * First, go to Device Manager in Windows.
  * On the Ports tab, check the number of COM ports the device is connected (e.g. (STMicroelectronics STLINK Virtual COM Port(COM4))).
  * And click STMicroelectronics STLINK Virtual COM Port to go to the Port Settings tab and change Bit/S(B) to 115200.
- <img src="img/Device_manager.png">
+ * <img src="img/Device_manager.png">
  * Then, you go down to the bottom of the validation.py file, you will see argparser codes like above. Here, '--com', '--path_data' must be modified.
  * com is the name of the port to which the board is connected, and path_data is the location of the data set that was used when learning.
- <img src="img/argparser.png">
+ * <img src="img/argparser.png">
  * **(The verification is conducted in the Windows environment, so you must download dataset to Windows and enter the location in default='path' path.)**
  * Finally, you must install the required Python library before running.(serial, numpy, scikit-learn, tqdm, pyserial)
  * "pip install serial numpy scikit-learn tqdm pyserial"
- <img src="img/pip_install.png">
+ * <img src="img/pip_install.png">
  * **If an error such as "ERROR: Error [WinError 225]" occurred during installation, shut down the Windows Defender and all vaccines.**
  * When you finish installing the library, you can run it through "python validation.py" 
  * Finally, press the Reset button located at the top of the board to start verification.
