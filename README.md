@@ -9,28 +9,88 @@
 
 ## How to deploy training model?
  * **STM32CubeMX**  
- * Open STM32CubeMX and click ACCESS TO BOARD SELECTER
- * Select your board (Click Yes in the selection window "Initialize all peripherals with their default Mode ?")
- * Click Software Packs and Manage Software Pack
- * In Categoly STMicroelectronics, Click the check box of Artifacial Intelligence(v7.1.0 or later version) under X.CUBE.AI and Install
- * Go back to the first page, click again Software Pack - Select Components
- * Expand STMicroelectronics.X-CUBE-AI
- * Check Artificial Intelligence X-CUBE-AI - Core
- * Select Device Application - ApplicationTemp
- * In the first page, select TIM2 from Timers in the category on the left(The TIM must be enabled to perform accurate inference latency measurement)
- * Clock Source - Internal Clock and check Enabled in NVIC settings at the bottom
- * In Parameter settings, change prescaler, Counter Period, auto-reload preload (each 9, 5000, Enable)
- * Go to the software pack in the categories.
- * Click Yes in a window window that automatically adjusts the clock and other parameters when clicked
- * Select new network from configuration
- * Change Keras -> ONNX, and import our models in .onnx
- * After choosing model, you can click Analyze to view the resources needed to run the model.
- * Go to Project Manager, Change Application - Basic and write Project Name\
- * Choose Toolchain / IDE - MDK-ARM
- * **The stack and heap sizes of the original Keil project were set as just 0x800 (2,048 bytes each), which caused unknown bugging behaviours in running.**
- * **After setting stack and heap sizes as 0x3000 and 0x5000, our code was safely run.**  
- * In order to operate the header file later, don't forget to check option Generate peripheral initialization as a pair of '.c/.h' files per peripheral in the Code Generator when generating code in Project Manager-Code Generator.
- * TIM in LL library should be selected in Project Manager-Advance Settings.
+
+  1. Open STM32CubeMX and click ***ACCESS TO BOARD SELECTER*** and select our board.
+
+     ![mainmenu](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/mainmenu.png)
+
+     ![select board](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/select%20board.png)
+
+  2. Click ***Software Packs --- Manage Software Packs*** and 
+
+     ![manage software packs](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/manage%20software%20packs.png)
+
+     Click the check box of <u>Artifacial Intelligence( v7.1.0 )</u> under **X.CUBE.AI** and click ***Install Now.***
+
+     ![install](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/install.png)
+
+  3. Click ***Software Packs --- Select Components*** and set option as follow.
+
+     ![components](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/components.png)
+
+     ![Snipaste_2022-07-09_16-19-42](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/Snipaste_2022-07-09_16-19-42.png)
+
+  4. Set PA2 as VCP_TX, and set PA15 as VCP_RX.
+
+     ![pins](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/pins.png)
+
+  5. Set Connectivity.
+
+     ![connectivity](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/connectivity.png)
+
+  6. Set AI network
+
+     First, set the communication options as follow
+
+     ![plantform setting](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/plantform%20setting.png)
+
+     Then click ***Add network*** and import ours model by follow steps shown in the picture.
+
+     ![image-20220627201730152](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627201730152.png)
+
+     After choosing model, you can click ***Analyze*** to view the resources needed to run the model.
+
+     ![image-20220627202020441](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627202020441.png)
+
+  7. Set Clock
+
+     ![clock](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/clock.png)
+
+  8. Finish settings and click ***GENERATE CODE***
+
+     ![project manager](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/project%20manager.png)
+
+  ## Load Program to Board
+
+  1. Connet the boadr to computer.
+
+     <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220627203515997.png" alt="image-20220627203515997" style="zoom: 25%;" />
+
+  2. Open project in MDK5 and build.
+
+     ![build](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/build.png)
+
+  3. Check if the debugger is connected.
+
+     First, click ***Options for Target***.
+
+     ![targets](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/targets.png)
+
+     Then switch to <u>Debug</u> and click ***Settings***.
+
+     <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/debug.png" alt="debug"  />
+
+     If the debugger is connected, you can see the IDCODE and the Device Name. 
+
+     <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/swdio.png" alt="swdio"  />
+
+     Finally, switch to <u>Flash Download</u> and check <u>Reset and Run</u>
+
+     ![full chip](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/full%20chip.png)
+
+  4. Now you can load program to the board.
+
+     ![load](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/load.png)
 
  * **MDK-ARM (Keil)**
  * After generating C source code based project, you should replace certain files in order to enable evaluation. You could directly copy and paste the files to the generated project in Keil.(four file - usart.c, app_x-cube-ai.c, app_x-cube-ai.h, main.c)
