@@ -51,6 +51,7 @@
  <img src="img/Device_manager.png">
  * Then, you go down to the bottom of the validation.py file, you will see argparser codes like above. Here, '--com', '--path_data' must be modified.
  * com is the name of the port to which the board is connected, and path_data is the location of the data set that was used when learning.
+ <img src="img/argparser.png">
  * **(The verification is conducted in the Windows environment, so you must download dataset to Windows and enter the location in default='path' path.)**
  * Finally, you must install the required Python library before running.(serial, numpy, scikit-learn, tqdm, pyserial)
  * "pip install serial numpy scikit-learn tqdm pyserial"
