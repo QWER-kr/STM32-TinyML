@@ -55,6 +55,7 @@
  * **(The verification is conducted in the Windows environment, so you must download dataset to Windows and enter the location in default='path' path.)**
  * Finally, you must install the required Python library before running.(serial, numpy, scikit-learn, tqdm, pyserial)
  * "pip install serial numpy scikit-learn tqdm pyserial"
+ <img src="img/pip_install.png">
  * **If an error such as "ERROR: Error [WinError 225]" occurred during installation, shut down the Windows Defender and all vaccines.**
  * When you finish installing the library, you can run it through "python validation.py" 
  * Finally, press the Reset button located at the top of the board to start verification.
