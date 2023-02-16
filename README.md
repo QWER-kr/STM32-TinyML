@@ -66,6 +66,10 @@
      In order to operate the header file later, don't forget to check option `Generate peripheral initialization as a pair of '.c/.h' files per peripheral` in the Code Generator when generating code.
 
      <img src="https://raw.githubusercontent.com/AugustZTR/picbed/master/img/image-20220915093242012.png" alt="image-20220915093242012" style="zoom:67%;" />
+     
+  8. Finish settings and click ***GENERATE CODE***
+
+     ![project manager](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/project%20manager.png)
 
   ## Load Program to Board
   
