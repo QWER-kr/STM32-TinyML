@@ -114,11 +114,10 @@
      ![load](https://raw.githubusercontent.com/AugustZTR/picbed/master/img/load.png)
 
  ## Validation in python
- * You need to set up before running on Python.
- * First, go to Device Manager in Windows.
- * On the Ports tab, check the number of COM ports the device is connected (e.g. (STMicroelectronics STLINK Virtual COM Port(COM4))).
- * And click STMicroelectronics STLINK Virtual COM Port to go to the Port Settings tab and change Bit/S(B) to 115200.
- * <img src="img/Device_manager.png">
+  1. First, go to Device Manager in Windows.
+     * On the Ports tab, check the number of COM ports the device is connected (e.g. (STMicroelectronics STLINK Virtual COM Port(COM4))).
+     * And click STMicroelectronics STLINK Virtual COM Port to go to the Port Settings tab and change Bit/S(B) to 115200.
+     <img src="img/Device_manager.png">
  * Then, you go down to the bottom of the validation.py file, you will see argparser codes like above. Here, '--com', '--path_data' must be modified.
  * com is the name of the port to which the board is connected, and path_data is the location of the data set that was used when learning.
  * <img src="img/argparser.png">
